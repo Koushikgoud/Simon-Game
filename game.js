@@ -3,10 +3,23 @@ var gamePattern = [];
 var userClickedPattern = [];
 var started = false;
 var level = 0;
+var highScore = 0;
+var newScore = 0;
 
 $(document).keydown(function(){
   if(!started){
     $("#level-title").html("Level "+level);
+    $(".restart-button").html("Restart Game");
+    nextSequence();
+    started = true;
+  }
+});
+
+$(".restart-button").click(function(){
+  if(!started){
+    $("#level-title").html("Level "+level);
+    $(".restart-button").html("Restart Game");
+    $(".restart-button").fadeOut(50).fadeIn(50);
     nextSequence();
     started = true;
   }
@@ -17,10 +30,22 @@ $(".btn").click(function(event){
   userClickedPattern.push(userChosenColour);
   playSound(userChosenColour);
   animatePress(userChosenColour);
-  console.log(userClickedPattern);
   checkAnswer(userClickedPattern.length-1);
 
 });
+
+$(".topnav .info-button").hover(function(){
+  $(this).addClass("hover");
+  $(".info-info").slideDown();
+  }, function(){
+  $(this).removeClass("hover");
+  $(".info-info").slideUp();
+  }
+  );
+
+$(".topnav .info-button").click(function(){
+  $(".info-info").slideToggle();
+})
 
 
 function nextSequence(){
@@ -45,6 +70,7 @@ function checkAnswer(currentLevel){
       setTimeout(function(){
         nextSequence()
       }, 1000);
+      newScore++;
     }
   }
   else{
@@ -53,7 +79,7 @@ function checkAnswer(currentLevel){
     setTimeout(function(){
       $("body").removeClass("game-over");
     }, 200);
-    $("#level-title").html("Game Over, Press Any Key to Restart");
+    $("#level-title").html("Game Over, Press Any Key/below button to Restart");
     startOver();
 
   }
@@ -74,4 +100,12 @@ function startOver(){
   level = 0;
   gamePattern = [];
   started = false;
+  if (newScore>highScore){
+    highScore = newScore;
+  }
+  else{
+    highScore = highScore;
+  }
+  $(".bottomnav .high-score").html("High Score = "+ highScore);
+  newScore = 0;
 }
