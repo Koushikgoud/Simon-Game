@@ -4,12 +4,37 @@
 <head>
   <meta charset="utf-8">
   <title>Simon</title>
+
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
-  <h1 id="level-title">Press any Key to Start</h1>
+
+    <div class="topnav">
+
+      <div type = "button" class="info-button">
+        info ❓
+      </div>
+
+    </div>
+
+
+    <div class="info-info">
+        <ol>
+          <li>Remember the sequence of flashing colors.</li>
+          <li>Click the colored buttons by following the sequence.</li>
+          <li>Good Luck 🍀</li>
+        </ol>
+    </div>
+
+    <h1 id="level-title">Press any Key / below button to Start</h1>
+
+    <div type = "button" class="restart-button">
+      Start Game
+    </div>
+
+
+
   <div class="container">
     <div class="row">
 
@@ -34,6 +59,17 @@
     </div>
 
   </div>
+
+  <div class="bottomnav">
+
+    <div type = "button" class="high-score">
+      High Score
+    </div>
+
+  </div>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="game.js" charset="utf-8"></script>
 </body>
