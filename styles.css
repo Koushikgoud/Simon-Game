@@ -5,7 +5,7 @@ body {
 
 ol {
   padding: 10px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'verdana', sans-serif;
   color: #22313f;
   list-style-type: none;
   background-color:#ccc;
@@ -18,7 +18,7 @@ ol {
 
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'verdana', sans-serif;
   font-size: 3rem;
   margin:  1%;
   color: #FEF2BF;
@@ -67,7 +67,7 @@ ol {
 }
 
 .restart-button{
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'verdana', sans-serif;
   margin: 10px 25px 25px 25px;
   display: inline-block;
   height: 25px;
@@ -80,7 +80,7 @@ ol {
 /* top Navigation bar */
 .info-button{
   text-align: right;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'verdana', sans-serif;
   margin: 10px 25px 25px 25px;
   display: inline-block;
   height: 25px;
@@ -111,9 +111,10 @@ ol {
 .bottomnav{
   text-align: center;
 }
+
 .high-score{
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'verdana', sans-serif;
   margin: 10px 25px 25px 25px;
   display: inline-block;
   height: 30px;
