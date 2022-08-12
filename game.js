@@ -6,7 +6,7 @@ var level = 0;
 var highScore = 0;
 var newScore = 0;
 if ($(window).width() < 900) {
-   $("#level-title").text("Click the start button to start");
+   $("#level-title").text("Click the start button");
 }
 
 
