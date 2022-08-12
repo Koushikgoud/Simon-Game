@@ -5,6 +5,10 @@ var started = false;
 var level = 0;
 var highScore = 0;
 var newScore = 0;
+if ($(window).width() < 900) {
+   $("#level-title").text("Click the start button to start");
+}
+
 
 $(document).keydown(function(){
   if(!started){
@@ -19,11 +23,12 @@ $(".restart-button").click(function(){
   if(!started){
     $("#level-title").html("Level "+level);
     $(".restart-button").html("Restart Game");
-    $(".restart-button").fadeOut(50).fadeIn(50);
+    $(".restart-button").fadeOut(100).fadeIn(100);
     nextSequence();
     started = true;
   }
 });
+
 
 $(".btn").click(function(event){
   var userChosenColour = $(this).attr("id");
@@ -79,7 +84,12 @@ function checkAnswer(currentLevel){
     setTimeout(function(){
       $("body").removeClass("game-over");
     }, 200);
-    $("#level-title").html("Game Over, Press Any Key/below button to Restart");
+    if ($(window).width() < 900) {
+       $("#level-title").text("Game Over ⚠️");
+     }
+     else{
+        $("#level-title").html("Game Over ⚠️ <br> Press Any Key/Restart button to Play Again");
+      }
     startOver();
 
   }
