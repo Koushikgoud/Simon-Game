@@ -1,109 +1,134 @@
+
 body {
   text-align: center;
   background-color: #011F3F;
 }
 
-ol {
-  padding: 10px;
-  font-family: "Times New Roman", Times, serif;
-  color: #22313f;
-  list-style-type: none;
-  background-color:#ccc;
-  width: 25%;
-  /*Centers the list*/
-  margin: 0 0 0 73%;
-  text-align: left;
-}
+/* PC/Laptop Friendly */
+
+@media (min-width: 900px) {
 
 
 
-#level-title {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 3rem;
-  margin:  1%;
-  color: #FEF2BF;
-}
+  /* top Navigation bar */
+  .topnav{
+    text-align: right;
+    height: 40px;
+  }
 
-.container {
-  display: block;
-  width: 50%;
-  margin: auto;
+  .info-button{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 25px 25px 25px;
+    display: inline-block;
+    height: 40px;
+    width: 190px;
+    border: 4px solid black;
+    border-radius: 20%;
+    background-color:  #FEF2BF;
+    font-size: 1.5rem;
+  }
 
-}
 
-.btn {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
-}
+  .hover{
+    background-color: white;
+  }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
+  .info-info{
+    display: none;
+    align-items: flex-end;
+    text-align: right;
+  }
 
-.red {
-  background-color: red;
-}
 
-.green {
-  background-color: green;
-}
 
-.blue {
-  background-color: blue;
-}
 
-.yellow {
-  background-color: yellow;
-}
+/* Game rules list */
+  ol {
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif;
+    color: #22313f;
+    list-style-type: none;
+    background-color:#ccc;
+    width: 30%;
+    /*Centers the list*/
+    margin: 0.6% 0 0 68%;
+    text-align: left;
+    border-radius: 5%
 
-.pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
-}
+  }
 
-.restart-button{
-  font-family: "Times New Roman", Times, serif;
-  margin: 10px 25px 25px 25px;
-  display: inline-block;
-  height: 25px;
-  width: 120px;
-  border: 4px solid black;
-  border-radius: 20%;
-  background-color:  #FEF2BF;
-}
+  li{
+    font-size: 1.2rem;
+  }
 
-/* top Navigation bar */
-.info-button{
-  text-align: right;
-  font-family: "Times New Roman", Times, serif;
-  margin: 10px 25px 25px 25px;
-  display: inline-block;
-  height: 25px;
-  width: 60px;
-  border: 4px solid black;
-  border-radius: 20%;
-  background-color:  #FEF2BF;
-}
+/* level Display */
 
-.topnav{
-  text-align: right;
-  height: 40px;
-}
+  #level-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3rem;
+    margin:  1%;
+    color: #FEF2BF;
+  }
 
-.hover{
-  background-color: white;
-}
+/* Restart Button */
+  .restart-button{
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 25px 25px 25px;
+    display: inline-block;
+    height: 45px;
+    width: 190px;
+    border: 4px solid black;
+    border-radius: 20%;
+    background-color:  #FEF2BF;
+    font-size: 2rem;
+  }
 
-.info-info{
-  display: none;
-  align-items: flex-end;
-  text-align: right;
-}
+
+/* Colored buttons */
+  .container {
+    display: block;
+    width: 50%;
+    margin: auto;
+
+  }
+
+
+  .btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .green {
+    background-color: green;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+
+
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
 
 
 
@@ -117,10 +142,291 @@ ol {
   font-family: "Times New Roman", Times, serif;
   margin: 10px 25px 25px 25px;
   display: inline-block;
-  height: 30px;
-  width: 120px;
+  height: 45px;
+  width: 230px;
   border: 4px solid black;
   border-radius: 20%;
   background-color:  #FEF2BF;
+  font-size: 2rem;
+
+}
+}
+
+/* Tablet/Ipad friendly */
+
+@media (max-width: 900px){
+  /* top Navigation bar */
+
+  .topnav{
+    text-align: right;
+    height: 40px;
+  }
+
+  .info-button{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 25px 25px 25px;
+    display: inline-block;
+    height: 35px;
+    width: 190px;
+    border: 4px solid black;
+    border-radius: 20%;
+    background-color:  #FEF2BF;
+    font-size: 1.5rem;
+  }
+
+
+  .hover{
+    background-color: white;
+  }
+
+  .info-info{
+    display: none;
+    align-items: flex-end;
+    text-align: right;
+  }
+  /* Game rules list */
+
+    ol {
+      padding: 10px;
+      font-family: "Times New Roman", Times, serif;
+      color: #22313f;
+      list-style-type: none;
+      background-color:#ccc;
+      width: 55%;
+      /*Centers the list*/
+      margin: 1.5% 0 0 40%;
+      text-align: left;
+      border-radius: 3%
+    }
+
+    li{
+      font-size: 1.5rem;
+    }
+
+    #level-title {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 3rem;
+      margin:  1%;
+      color: #FEF2BF;
+    }
+
+    /* Restart Button */
+      .restart-button{
+        font-family: "Times New Roman", Times, serif;
+        margin: 10px 25px 25px 25px;
+        display: inline-block;
+        height: 50px;
+        width: 220px;
+        border: 4px solid black;
+        border-radius: 20%;
+        background-color:  #FEF2BF;
+        font-size: 2.2rem;
+      }
+
+      /* Colored buttons */
+        .container {
+          display: block;
+          width: 50%;
+          margin: auto;
+
+        }
+
+
+        .btn {
+          margin: 25px;
+          display: inline-block;
+          height: 200px;
+          width: 200px;
+          border: 10px solid black;
+          border-radius: 20%;
+        }
+
+        .red {
+          background-color: red;
+        }
+
+        .green {
+          background-color: green;
+        }
+
+        .blue {
+          background-color: blue;
+        }
+
+        .yellow {
+          background-color: yellow;
+        }
+
+        .pressed {
+          box-shadow: 0 0 20px white;
+          background-color: grey;
+        }
+
+
+        .game-over {
+          background-color: red;
+          opacity: 0.8;
+        }
+
+        /* Bottom Navigation Bar */
+        .bottomnav{
+          text-align: center;
+        }
+
+        .high-score{
+          text-align: center;
+          font-family: "Times New Roman", Times, serif;
+          margin: 10px 25px 25px 25px;
+          display: inline-block;
+          height: 45px;
+          width: 230px;
+          border: 4px solid black;
+          border-radius: 20%;
+          background-color:  #FEF2BF;
+          font-size: 2rem;
+
+        }
+
+
+}
+
+
+
+
+/* Mobile Friendly */
+@media (max-width: 576px) {
+
+
+  .topnav{
+    text-align: right;
+    height: 40px;
+  }
+
+  .info-button{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 25px 25px 25px;
+    display: inline-block;
+    height: 35px;
+    width: 180px;
+    border: 5px solid black;
+    border-radius: 25%;
+    background-color:  #FEF2BF;
+  }
+
+
+  .hover{
+    background-color: white;
+  }
+
+  .info-info{
+    display: none;
+    align-items: flex-end;
+    text-align: left;
+  }
+
+/* Game rules list */
+
+  ol {
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif;
+    color: #22313f;
+    list-style-type: none;
+    background-color:#ccc;
+    width: 80%;
+    /*Centers the list*/
+    margin: 3% 0 0 10%;
+    text-align: left;
+    border-radius: 5%;
+  }
+
+  li{
+    font-size: 1.5rem;
+  }
+
+  #level-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3rem;
+    margin:  5% 1% 1% 1%;
+    color: #FEF2BF;
+  }
+
+
+  /* Restart Button */
+    .restart-button{
+      font-family: "Times New Roman", Times, serif;
+      margin: 10px 25px 25px 25px;
+      display: inline-block;
+      height: 45px;
+      width: 200px;
+      border: 4px solid black;
+      border-radius: 20%;
+      background-color:  #FEF2BF;
+      font-size: 2rem;
+    }
+
+    .container {
+      display: block;
+      width: 50%;
+      margin: auto;
+
+    }
+
+
+    .btn {
+      margin: 25px;
+      display: inline-block;
+      height: 230px;
+      width: 230px;
+      border: 10px solid black;
+      border-radius: 20%;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .pressed {
+      box-shadow: 0 0 20px white;
+      background-color: grey;
+    }
+
+
+    .game-over {
+      background-color: red;
+      opacity: 0.8;
+    }
+
+    /* Bottom Navigation Bar */
+    .bottomnav{
+      text-align: center;
+    }
+
+    .high-score{
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      margin: 10px 25px 25px 25px;
+      display: inline-block;
+      height: 45px;
+      width: 230px;
+      border: 4px solid black;
+      border-radius: 20%;
+      background-color:  #FEF2BF;
+      font-size: 2rem;
+
+    }
 
 }
