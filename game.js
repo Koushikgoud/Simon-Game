@@ -6,7 +6,11 @@ var level = 0;
 var highScore = 0;
 var newScore = 0;
 if ($(window).width() < 900) {
-   $("#level-title").text("Click the start button");
+   $("h1").text("Click the start button");
+}
+else{
+   $("h1").text("Press any key/Start Button");
+
 }
 
 
@@ -85,10 +89,10 @@ function checkAnswer(currentLevel){
       $("body").removeClass("game-over");
     }, 200);
     if ($(window).width() < 900) {
-       $("#level-title").text("Game Over ⚠️");
+       $("h1").text("Game Over ⚠️");
      }
      else{
-        $("#level-title").html("Game Over ⚠️ <br> Press Any Key/Restart button to Play Again");
+        $("h1").html("Game Over ⚠️ <br> Press Any Key/Restart button to Play Again");
       }
     startOver();
 
