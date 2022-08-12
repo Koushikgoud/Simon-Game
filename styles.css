@@ -201,7 +201,7 @@ body {
     }
 
     li{
-      font-size: 1.5rem;
+      font-size: 3rem;
     }
 
     #level-title {
@@ -236,8 +236,8 @@ body {
         .btn {
           margin: 25px;
           display: inline-block;
-          height: 200px;
-          width: 200px;
+          height: 270px;
+          width: 270px;
           border: 10px solid black;
           border-radius: 20%;
         }
@@ -336,13 +336,13 @@ body {
     background-color:#ccc;
     width: 80%;
     /*Centers the list*/
-    margin: 3% 0 0 10%;
+    margin: 4% 0 0 0%;
     text-align: left;
     border-radius: 5%;
   }
 
   li{
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   #level-title {
@@ -377,8 +377,8 @@ body {
     .btn {
       margin: 25px;
       display: inline-block;
-      height: 230px;
-      width: 230px;
+      height: 270px;
+      width: 270px;
       border: 10px solid black;
       border-radius: 20%;
     }
