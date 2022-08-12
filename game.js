@@ -5,6 +5,7 @@ var started = false;
 var level = 0;
 var highScore = 0;
 var newScore = 0;
+
 if ($(window).width() < 900) {
    $("h1").text("Click the start button");
 }
@@ -43,18 +44,25 @@ $(".btn").click(function(event){
 
 });
 
-$(".topnav .info-button").hover(function(){
-  $(this).addClass("hover");
-  $(".info-info").slideDown();
-  }, function(){
-  $(this).removeClass("hover");
-  $(".info-info").slideUp();
+if ($(window).width() < 900){
+  $(".topnav .info-button").click(function(){
+    $(".info-info").slideToggle();
+    $('.info-button').fadeOut(50).fadeIn(50)});
   }
-  );
 
-$(".topnav .info-button").click(function(){
-  $(".info-info").slideToggle();
-})
+
+else{
+  $(".topnav .info-button").hover(function(){
+    $(this).addClass("hover");
+    $(".info-info").slideDown();
+    }, function(){
+    $(this).removeClass("hover");
+    $(".info-info").slideUp();
+    }
+    );
+  }
+
+
 
 
 function nextSequence(){
